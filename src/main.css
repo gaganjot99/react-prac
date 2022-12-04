@@ -1,4 +1,117 @@
-div{
-    font-size: large;
-    background-color: aquamarine;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@300;400;500&display=swap");
+
+:root {
+  --green: #2c9d55;
+  --lightgray: #f4fcf7;
+  --black: #334052;
+  --yellow: #fdde8a;
+  --whitegreen: #e8faee;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  color: var(--black);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 400;
+}
+
+button {
+  padding: 5px 7px;
+  transition-duration: 300ms;
+  cursor: pointer;
+  color: var(--black);
+}
+
+ul {
+  list-style: none;
+}
+
+.theme-btn {
+  border: none;
+  padding: 15px 30px;
+  font-size: 1em;
+  border-radius: 5px;
+}
+
+.green-text {
+  color: var(--green);
+}
+
+.green-text-btn {
+  color: var(--green);
+  background-color: var(--whitegreen);
+}
+
+.green-text-btn:hover {
+  color: var(--whitegreen);
+  background-color: var(--green);
+}
+
+.green-bg-btn {
+  color: var(--whitegreen);
+  background-color: var(--green);
+}
+
+.green-bg-btn:hover {
+  opacity: 0.8;
+}
+
+.small-text {
+  font-weight: 400;
+  color: #6c7581;
+}
+
+.large-text {
+  font-size: 5rem;
+  font-weight: 500;
+}
+
+.margin-vert {
+  margin: 30px 0;
+}
+
+.margin-right {
+  margin-right: 10%;
+}
+
+.left-top-p {
+  margin-bottom: 60px;
+}
+
+.space-bt-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.side-margin-5 {
+  margin: 30px 100px;
+}
+
+.top-nav-bar h2 {
+  color: var(--green);
+}
+
+.top-nav-bar ul li {
+  margin: 0 35px;
+}
+
+.mid-top {
+  margin-left: 100px;
+}
+
+.width-half {
+  width: 50%;
+}
+
+.left-top {
+  margin-top: 150px;
 }
