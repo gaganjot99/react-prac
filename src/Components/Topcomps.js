@@ -1,4 +1,5 @@
 import React from "react";
+import { Userreview } from "./Comps";
 import Image from "./Image";
 
 export const Lefttop = () => {
@@ -36,11 +37,21 @@ const images2 = [
   },
 ];
 
+const user = {
+  name: "Adam K.",
+  adventure: "Indonesia Adventure",
+  rating: "5.0",
+  img: "images/user1.jpg",
+};
+
 export const Righttop = () => {
   return (
     <div className="width-half relative-pos">
       <Image images={images1} cssClass="image-top"></Image>
       <Image images={images2} cssClass="image-below"></Image>
+      <div className="top-user-rating">
+        <Userreview {...user}></Userreview>
+      </div>
     </div>
   );
 };
