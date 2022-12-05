@@ -1,5 +1,5 @@
 import React from "react";
-import Lefttop from "./Components/Lefttop";
+import { Lefttop, Righttop } from "./Components/Topcomps";
 
 import Navs from "./Components/Navs";
 
@@ -9,6 +9,7 @@ const Top = () => {
       <Navs></Navs>
       <div className="mid-top">
         <Lefttop></Lefttop>
+        <Righttop></Righttop>
       </div>
     </div>
   );

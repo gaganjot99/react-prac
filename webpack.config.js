@@ -1,24 +1,20 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const TerserPlugin = require("terser-webpack-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   entry: "./src/App.js",
   mode: "development",
   devServer: {
-    static: "./src",
+    static: ["./src", "./public"],
     hot: false,
-  },
-  optimization: {
-    minimizer: [
-      new TerserPlugin({
-        /* additional options here */
-      }),
-    ],
   },
   plugins: [
     new HtmlWebpackPlugin({
       title: "Output Management",
       template: "./public/index.html",
+    }),
+    new CopyWebpackPlugin({
+      patterns: [{ from: "./public/images", to: "public/images" }],
     }),
   ],
   module: {
@@ -33,6 +29,10 @@ module.exports = {
       {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        type: "asset",
       },
     ],
   },
