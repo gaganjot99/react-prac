@@ -130,6 +130,10 @@ ul {
   margin-top: 140px;
 }
 
+.left-margin {
+  margin-left: 120px;
+}
+
 .round-img {
   height: 100%;
   width: 100%;
@@ -260,4 +264,62 @@ div.each-slide {
   position: absolute;
   left: 60px;
   top: 550px;
+}
+
+.green-color {
+  color: var(--green);
+}
+
+.dial-outer {
+  height: 590px;
+  width: 590px;
+  border: 4px solid var(--whitegreen);
+  border-radius: 50%;
+  position: relative;
+  transition-duration: 1s;
+}
+
+.dial-item {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  transition-duration: 1s;
+  background-color: var(--whitegreen);
+  font-size: 1.5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dial-1 {
+  top: -26px;
+  left: 265px;
+}
+
+.dial-2 {
+  top: 257px;
+  left: -25px;
+}
+
+.dial-3 {
+  left: 555px;
+  top: 211px;
+}
+
+.dial-4 {
+  top: 559px;
+  left: 275px;
+}
+
+.dial-slides {
+  height: 525px;
+  width: 525px;
+  position: absolute;
+  top: 32px;
+  left: 32px;
+}
+
+.about-us-div {
+  margin: 180px 100px 200px 140px;
 }

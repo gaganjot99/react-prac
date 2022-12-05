@@ -3,6 +3,7 @@ import { Lefttop, Righttop } from "./Components/Topcomps";
 
 import Navs from "./Components/Navs";
 import { Infoline } from "./Components/Comps";
+import Aboutus from "./Components/Aboutus";
 
 const Top = () => {
   return (
@@ -13,6 +14,7 @@ const Top = () => {
         <Righttop></Righttop>
       </div>
       <Infoline></Infoline>
+      <Aboutus></Aboutus>
     </div>
   );
 };
