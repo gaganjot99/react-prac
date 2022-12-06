@@ -1,5 +1,9 @@
 import React, { useEffect } from "react";
 
+export const Boxshadow = (props) => {
+  return <div className="box-shadow">{props.children}</div>;
+};
+
 const Infotext = ({ large, small }) => {
   return (
     <div className="tag-info-div">
@@ -28,10 +32,12 @@ export const Infoline = () => {
 export const Userreview = ({ name, adventure, rating, img }) => {
   return (
     <div className="user-review">
-      <img src={img} alt="user profile pic"></img>
-      <div className="name-adv">
-        <h3>{name}</h3>
-        <p>{adventure}</p>
+      <div className="flex-start">
+        <img src={img} alt="user profile pic"></img>
+        <div className="name-adv">
+          <h3>{name}</h3>
+          <p>{adventure}</p>
+        </div>
       </div>
       <div className="user-rating">
         <i className="bi bi-star-fill"></i>

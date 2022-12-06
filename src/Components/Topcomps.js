@@ -1,5 +1,5 @@
 import React from "react";
-import { Userreview } from "./Comps";
+import { Boxshadow, Userreview } from "./Comps";
 import Image from "./Image";
 
 export const Lefttop = () => {
@@ -50,7 +50,9 @@ export const Righttop = () => {
       <Image images={images1} cssClass="image-top"></Image>
       <Image images={images2} cssClass="image-below"></Image>
       <div className="top-user-rating">
-        <Userreview {...user}></Userreview>
+        <Boxshadow>
+          <Userreview {...user}></Userreview>
+        </Boxshadow>
       </div>
     </div>
   );

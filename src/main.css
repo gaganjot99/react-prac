@@ -118,7 +118,7 @@ ul {
   margin: 30px 120px;
 }
 
-.top-nav-bar h2 {
+.logo {
   color: var(--green);
   font-size: 1.75rem;
 }
@@ -232,12 +232,16 @@ div.each-slide {
   justify-content: space-between;
   align-items: center;
   background: white;
-  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12),
-    0 2px 4px -1px rgba(0, 0, 0, 0.2);
   z-index: 200;
-  position: absolute;
   border-radius: 5px;
   padding: 15px;
+  position: relative;
+}
+
+.box-shadow {
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12),
+    0 2px 4px -1px rgba(0, 0, 0, 0.2);
+  border-radius: inherit;
 }
 
 .user-review img {
@@ -285,6 +289,7 @@ div.each-slide {
   position: absolute;
   left: 60px;
   top: 550px;
+  border-radius: 10px;
 }
 
 .green-color {
@@ -550,8 +555,84 @@ div.each-slide {
   width: 500px;
 }
 
+.flex-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 .newsletter-form button {
   position: absolute;
   top: 5px;
   right: 5px;
+}
+
+.client-review {
+  margin-top: 150px;
+}
+
+.client-review h1 {
+  font-size: 4rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.client-reviews {
+  display: flex;
+  margin: 65px 100px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.client-rev {
+  flex-basis: 32%;
+}
+
+.client-rev > p {
+  padding: 15px;
+  line-height: 1.5;
+  color: var(--gray);
+}
+
+.footer {
+  display: flex;
+  padding: 50px 120px;
+  background: var(--whitegreen);
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 200px;
+}
+
+.left-footer {
+  flex-basis: 33%;
+}
+
+.left-footer p {
+  line-height: 1.5;
+  color: var(--gray);
+  margin-top: 20px;
+}
+
+.right-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-basis: 40%;
+}
+
+.footer-right-list {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-right-list h2 {
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.footer-right-list button {
+  color: var(--gray);
+  margin: 12px 0;
 }

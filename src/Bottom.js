@@ -1,10 +1,12 @@
 import React from "react";
-import { Start } from "./Components/Bottomcomps";
+import { Footer, Reviews, Start } from "./Components/Bottomcomps";
 
 const Bottom = () => {
   return (
     <div>
       <Start></Start>
+      <Reviews></Reviews>
+      <Footer></Footer>
     </div>
   );
 };
