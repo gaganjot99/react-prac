@@ -46,6 +46,20 @@ ul {
   font-weight: 500;
 }
 
+.btn-no-border {
+  border: none;
+  background-color: inherit;
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+  transition-duration: 0ms;
+}
+
+.btn-no-border:hover {
+  font-weight: 500;
+  color: var(--black);
+}
+
 .green-text {
   color: var(--green);
 }
@@ -72,6 +86,7 @@ ul {
 .small-text {
   font-weight: 400;
   color: #6f7680;
+  font-size: 1rem;
 }
 
 .large-text {
@@ -132,6 +147,12 @@ ul {
 
 .left-margin {
   margin-left: 120px;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .round-img {
@@ -320,6 +341,123 @@ div.each-slide {
   left: 32px;
 }
 
+.about-us-pic {
+  margin: 180px 60px 150px 140px;
+}
+
 .about-us-div {
-  margin: 180px 100px 200px 140px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.about-us-text {
+  flex-basis: 42%;
+}
+
+.about-us-text h1 {
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.about-us-text p {
+  font-size: 1.1rem;
+  color: var(--gray);
+  margin: 25px 0;
+  line-height: 1.5;
+}
+
+.about-us-text button {
+  margin-top: 15px;
+}
+
+.point-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 50px 120px;
+}
+
+.point-line-points {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.point-line-item {
+  flex-basis: 33%;
+  padding: 20px;
+}
+
+.point-line-header h1 {
+  font-size: 4rem;
+  width: 350px;
+  margin-bottom: 20px;
+}
+
+.point-line-header p {
+  font-size: 1.25rem;
+  color: var(--gray);
+  line-height: 1.5;
+}
+
+.point-line-item i {
+  background-color: var(--whitegreen);
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  height: 50px;
+  width: 50px;
+  display: block;
+  text-align: center;
+}
+
+.point-line-item h2 {
+  font-size: 1.75rem;
+  font-weight: 500;
+  margin: 21px 0 10px;
+}
+
+.point-line-item p {
+  line-height: 1.5;
+  color: var(--gray);
+}
+
+.listing-item {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 450px;
+  max-height: 450px;
+  margin: 10px;
+}
+
+.listing-item-img {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.listing-name-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 25px 0;
+}
+
+.listing-name-price h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.listing-name-price h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.listing-item-info {
+  line-height: 1.5;
+  color: var(--gray);
+  text-align: justify;
 }

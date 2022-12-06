@@ -85,3 +85,79 @@ export const Dialimages = () => {
     </div>
   );
 };
+
+export const Pointline = () => {
+  return (
+    <div className="point-line">
+      <div className="point-line-header">
+        <h1>Why us?</h1>
+        <p>Answer is simple.</p>
+        <p>See what we offer!</p>
+      </div>
+      <div className="point-line-points">
+        <div className="point-line-item">
+          <i className="green-color bi bi-prescription2"></i>
+          <h2>Safety</h2>
+          <p>Safety is the highest value for us and our travels.</p>
+        </div>
+        <div className="point-line-item">
+          <i className="green-color bi bi-strava"></i>
+          <h2>Places</h2>
+          <p>On a daily basis, we visit places inaccessible to tourists.</p>
+        </div>
+        <div className="point-line-item">
+          <i className="green-color bi bi-people-fill"></i>
+          <h2>Locals</h2>
+          <p>By knowing the local people we get to know the local culture.</p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const Listingitem = ({ name, price, info, img, ifnew }) => {
+  return (
+    <div className="listing-item">
+      <div className="listing-item-img">
+        <img src={img} alt="landscape of place"></img>
+        {ifnew && <div className="listing-new-tag"></div>}
+      </div>
+      <div className="listing-name-price">
+        <h2>{name}</h2>
+        <h3>
+          ${price}
+          <span className="small-text">/week</span>
+        </h3>
+      </div>
+      <p className="listing-item-info">
+        {info.length > 100 ? info.substring(0, 100) + "..." : info}
+        {info.length > 100 ? (
+          <button className="btn-no-border">Read more</button>
+        ) : null}
+      </p>
+    </div>
+  );
+};
+
+const destinations = [
+  {
+    name: "Cali, Indonesia",
+    price: 2800,
+    info: "Cali is an Beautiful island on the east of this Beautiful Meditarrean country. The beaches of this island are some of the most beautiful in the world.",
+    img: "images/land5.JPG",
+    ifnew: true,
+  },
+];
+
+export const Listing = () => {
+  return (
+    <div>
+      <h1>Destinations</h1>
+      <div>
+        {destinations.map((ele, i) => {
+          return <Listingitem {...ele} key={i}></Listingitem>;
+        })}
+      </div>
+    </div>
+  );
+};

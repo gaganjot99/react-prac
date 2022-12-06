@@ -2,7 +2,7 @@ import React from "react";
 import { Lefttop, Righttop } from "./Components/Topcomps";
 
 import Navs from "./Components/Navs";
-import { Infoline } from "./Components/Comps";
+import { Infoline, Listing, Pointline } from "./Components/Comps";
 import Aboutus from "./Components/Aboutus";
 
 const Top = () => {
@@ -15,6 +15,8 @@ const Top = () => {
       </div>
       <Infoline></Infoline>
       <Aboutus></Aboutus>
+      <Pointline></Pointline>
+      <Listing></Listing>
     </div>
   );
 };
