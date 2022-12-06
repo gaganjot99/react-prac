@@ -120,7 +120,11 @@ const Listingitem = ({ name, price, info, img, ifnew }) => {
     <div className="listing-item">
       <div className="listing-item-img">
         <img src={img} alt="landscape of place"></img>
-        {ifnew && <div className="listing-new-tag"></div>}
+        {ifnew && (
+          <div className="listing-new-tag">
+            <span>New</span>
+          </div>
+        )}
       </div>
       <div className="listing-name-price">
         <h2>{name}</h2>
@@ -130,8 +134,8 @@ const Listingitem = ({ name, price, info, img, ifnew }) => {
         </h3>
       </div>
       <p className="listing-item-info">
-        {info.length > 100 ? info.substring(0, 100) + "..." : info}
-        {info.length > 100 ? (
+        {info.length > 80 ? info.substring(0, 80) + "..." : info}
+        {info.length > 80 ? (
           <button className="btn-no-border">Read more</button>
         ) : null}
       </p>
@@ -147,17 +151,33 @@ const destinations = [
     img: "images/land5.JPG",
     ifnew: true,
   },
+  {
+    name: "Caracas, Venezuela",
+    price: 3000,
+    info: "The Country located at the northern end of the South America. Discovering amazing places in the this Wild country with large mountains and lakes.",
+    img: "images/land6.JPG",
+    ifnew: true,
+  },
+  {
+    name: "Palawan, Phillippines",
+    price: 4500,
+    info: "Palawan associated with the paradise island. Some of the most beautiful beaches and palm trees in the world.",
+    img: "images/per4.JPG",
+    ifnew: true,
+  },
 ];
 
 export const Listing = () => {
   return (
-    <div>
+    <div className="listing-div">
       <h1>Destinations</h1>
-      <div>
+      <p>Check out where our trips are taking place.</p>
+      <div className="listing-list-div">
         {destinations.map((ele, i) => {
           return <Listingitem {...ele} key={i}></Listingitem>;
         })}
       </div>
+      <button className="green-text-btn theme-btn">Explore more</button>
     </div>
   );
 };
