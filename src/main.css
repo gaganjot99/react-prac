@@ -636,3 +636,24 @@ div.each-slide {
   color: var(--gray);
   margin: 12px 0;
 }
+
+.hidden {
+  visibility: hidden;
+}
+
+.scroll-animation {
+  opacity: 0;
+}
+
+.active-animation {
+  animation: fade-in 500ms ease-in 500ms forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

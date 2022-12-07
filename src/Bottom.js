@@ -1,12 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Footer, Reviews, Start } from "./Components/Bottomcomps";
+import { Scrollanim } from "./Components/Comps";
+import scrollTrigger from "./Components/scripts";
 
 const Bottom = () => {
   return (
     <div>
-      <Start></Start>
-      <Reviews></Reviews>
-      <Footer></Footer>
+      <Scrollanim>
+        <Start></Start>
+      </Scrollanim>
+      <Scrollanim>
+        <Reviews></Reviews>
+      </Scrollanim>
+      <Scrollanim>
+        <Footer></Footer>
+      </Scrollanim>
     </div>
   );
 };

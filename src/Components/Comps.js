@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
+import { addObserver } from "./scripts";
 
 export const Boxshadow = (props) => {
   return <div className="box-shadow">{props.children}</div>;
@@ -184,6 +185,18 @@ export const Listing = () => {
         })}
       </div>
       <button className="green-text-btn theme-btn">Explore more</button>
+    </div>
+  );
+};
+
+export const Scrollanim = (props) => {
+  const ref = useRef(null);
+  useEffect(() => {
+    addObserver(ref.current);
+  }, []);
+  return (
+    <div ref={ref} className="scroll-animation hidden">
+      {props.children}
     </div>
   );
 };
