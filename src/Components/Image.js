@@ -34,6 +34,7 @@ export const Imagefade = ({ images, cssClass }) => {
               src={slideImage.url}
               alt={slideImage.caption}
               key={index}
+              loading="lazy"
             ></img>
           </div>
         ))}

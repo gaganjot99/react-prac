@@ -126,7 +126,7 @@ const Listingitem = ({ name, price, info, img, ifnew }) => {
   return (
     <div className="listing-item">
       <div className="listing-item-img">
-        <img src={img} alt="landscape of place"></img>
+        <img src={img} alt="landscape of place" loading="lazy"></img>
         {ifnew && (
           <div className="listing-new-tag">
             <span>New</span>

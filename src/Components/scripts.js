@@ -22,7 +22,7 @@ let observer = new IntersectionObserver(
     });
   },
   {
-    rootMargin: "-200px",
+    rootMargin: "-100px",
   }
 );
 export function addObserver(el) {

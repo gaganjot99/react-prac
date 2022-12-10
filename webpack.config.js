@@ -8,7 +8,7 @@ module.exports = {
     filename: "App.js",
     path: path.resolve(__dirname, "docs"),
   },
-  mode: "production",
+  mode: "development",
   devServer: {
     static: ["./src", "./public"],
     hot: false,
