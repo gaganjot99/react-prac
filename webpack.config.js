@@ -3,7 +3,7 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   entry: "./src/App.js",
-  mode: "development",
+  mode: "production",
   devServer: {
     static: ["./src", "./public"],
     hot: false,
